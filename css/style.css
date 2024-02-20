@@ -1,0 +1,121 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../images/bg.jpg);
+  background-color: rgba(0, 0, 0, 0.74);
+  position: relative;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  opacity: .7;
+  margin-bottom: 5%;
+}
+
+#carouselContainer {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  max-height: 100%;
+  width: auto;
+}
+
+.social-icons-column {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.social-icons-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons-column li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .social-icons-column {
+    display: none;
+  }
+
+  .lr-overlay{
+    display: none;
+  }
+
+}
+
+#carouselExampleIndicators {
+  margin-top: 0;
+}
+
+.social-icons-column i {
+  font-size: 3em;
+  transition: color 0.3s ease; 
+}
+
+.social-icons-column i:hover {
+  color: rgb(7, 57, 165);
+  transition: .5s;
+}
+
+.accordion-item{
+  height: 60%;
+  font-size: 21px;
+}
+
+.accordion{
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.card-title{
+  text-align: center;
+}
+
+.card-body{
+  text-decoration: none;
+  text-align: center;
+}
+
+.lr-overlay{
+  position: relative;
+}
+
+.lr-overlay:after{
+    content: "";
+    width: 0;
+    height: 0;
+    left:0;
+    top:0;
+    background-color:rgba(145, 145, 145, 0.418); 
+    position: absolute;
+}
+
+.lr-overlay:hover:after{
+    width: 69%;
+    height: 100%;
+    z-index: 100;
+    transition: 1s;    
+}
+
+.foot{
+  background-color: rgba(34, 33, 33, 0.377);
+  height: 25%;
+  width: 99%;
+}
